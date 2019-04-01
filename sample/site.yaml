@@ -1,0 +1,15 @@
+---
+# This file is 01-site.yaml
+# To hsots
+- hosts: defaults
+  vars_files:
+    - group_vars/vars.yaml
+  # host spec checking
+  gather_facts: no
+
+# Run sudo 
+  become: yes
+
+# Run roles directory
+  roles:
+    - sample

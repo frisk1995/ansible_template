@@ -1,0 +1,4 @@
+---
+# This file is tasks/main.yaml
+ - name: Main Task 01
+   ping:
